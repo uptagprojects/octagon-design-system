@@ -41,7 +41,7 @@ function App() {
 }
 ```
 
-For more details on how to use the components, refer to the [Components](./components/buttons.md) section of the documentation.
+For more details on how to use the components, refer to the [Components](./components/button.md) section of the documentation.
 
 You can also explore our documentation:
 
