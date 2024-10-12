@@ -1,22 +1,23 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
+const organizationName = 'uptagprojects';
+const projectName = 'octagon-design-system'
 const config: Config = {
   title: 'Octagon Design System',
   tagline: 'UI kit 2**8',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://octagon.github.io',
+  url: `https://${organizationName}.github.io`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: `/${projectName}`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'uptagprojects', // Usually your GitHub org/user name.
-  projectName: 'octagon-design-system', // Usually your repo name.
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,8 +38,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/uptagprojects/octagon-design-system/tree/main/',
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,7 +64,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/uptagprojects/octagon-design-system',
+          href: `https://github.com/${organizationName}/${projectName}`,
           label: 'GitHub',
           position: 'right',
         },
@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/uptagprojects/octagon-design-system',
+              href: `https://github.com/${organizationName}/${projectName}`,
             },
           ],
         },
