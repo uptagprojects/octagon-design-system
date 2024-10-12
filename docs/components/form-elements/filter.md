@@ -37,5 +37,3 @@ The `Filter` component is designed to be used inside a search input to enhance t
 - Use clear and concise criteria names.
 - Limit the number of filters to avoid overwhelming the user.
 - Provide default filter options to guide the user.
-
-For more detailed information, refer to the [Filter Component Documentation](../filter-component.md).
