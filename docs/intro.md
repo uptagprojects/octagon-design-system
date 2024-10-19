@@ -50,15 +50,15 @@ function App() {
 }
 ```
 
-For more details on how to use the components, refer to the [Components](./components/alert.md) section of the documentation.
+For more details on how to use the components, refer to the [Components](./Components/avatar.md) section of the documentation.
 
 You can also explore our documentation:
 
 1. [Layout Guidelines](./layout.md)
 2. [Color System](./colors.md)
 3. [Typography](./typography.md)
-4. [Components](./components/alert.md)
-5. [Patterns](./patterns/data-display.md)
+4. [Components](./Components/avatar.md)
+5. [Patterns](./Patterns/data-display.md)
 
 
 Let's create beautiful and functional interfaces together with Octagon!
