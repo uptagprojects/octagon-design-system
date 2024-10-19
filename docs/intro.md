@@ -31,17 +31,26 @@ To start using Octagon in your project, you need to install the package via npm.
   npm install octagon-ui
   ```
 
+Import the `index.css` file into your main component to load all the styles:
+
+```
+// App.js
+import "octagon-ui/dist/index.css";
+
+// ...
+```
+
 After the installation is complete, you can start importing and using Octagon components in your project.
 
 ```javascript
 import { Button } from 'octagon-ui';
 
 function App() {
-  return <Button>Click Me</Button>;
+  return <Button label="Click me" />;
 }
 ```
 
-For more details on how to use the components, refer to the [Components](./components/button.md) section of the documentation.
+For more details on how to use the components, refer to the [Components](./components/alert.md) section of the documentation.
 
 You can also explore our documentation:
 

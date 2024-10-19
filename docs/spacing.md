@@ -48,10 +48,11 @@ By adhering to these scales, you can ensure a consistent and harmonious layout t
 
 ### Usage
 
-Use these spacing values for margins, paddings, and gaps between elements to ensure consistency across your designs.
+You can access all of the sizes and scales with the variables `--size-{number}` and `--scale-{number}`:
 
-```jsx
-<div className="m-md p-lg">
-  Content with medium margin and large padding
-</div>
+```css
+.my_component {
+  padding: var(--scale-2);
+  font-size: var(--size-4);
+}
 ```

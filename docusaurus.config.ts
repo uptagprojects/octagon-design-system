@@ -5,7 +5,7 @@ const organizationName = 'uptagprojects';
 const projectName = 'octagon-design-system'
 const config: Config = {
   title: 'Octagon Design System',
-  tagline: 'UI kit 2**8',
+  tagline: 'A modern and flexible design system for creating beautiful user interfaces for the PNFi UPTAG',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -49,7 +49,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.jpg',
     navbar: {
       title: 'Octagon Design System',
       logo: {
@@ -86,16 +86,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Octagon UI',
+              href: 'https://stackoverflow.com/uptagprojects/octagon-ui',
             },
           ],
         },
@@ -109,7 +101,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyleft :) ${new Date().getFullYear()}, Inc. Built with Docusaurus.`,
+      copyright: `Made with :heart: and built with Docusaurus`,
     },
     prism: {
       theme: prismThemes.github,
@@ -119,7 +111,7 @@ const config: Config = {
 
   // Add this section to include Google Fonts
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap',
+    'https://fonts.googleapis.com/css2?family=Lexend:wght@400..900&family=Open+Sans:wght@400..800&display=swap'
   ],
 };
 

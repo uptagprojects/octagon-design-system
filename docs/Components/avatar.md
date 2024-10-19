@@ -9,8 +9,14 @@ The Avatar component in the Octagon Design System is a unique and visually disti
 
 ## Usage
 
-To use the Avatar component, simply include it in your project and customize it as needed:
+### Props
 
+- `src`* (string): The URL of the image.
+- `alt`* (string): Alternative text for accesibility.
+- `size` (number): Avatar size in pixels. Defaults to 50px.
+
+
+## Example
 
 ```jsx
 import React from 'react';
@@ -20,7 +26,7 @@ const UserProfile = () => {
     return (
         <div>
             <h2>User Profile</h2>
-            <Avatar src="user.jpg" alt="Jane Doe" size="large" />
+            <Avatar src="/user.jpg" alt="Jane Doe profile picture" size={120} />
         </div>
     );
 };

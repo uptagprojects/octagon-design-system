@@ -11,13 +11,9 @@ Octagon uses a flexible grid system to create consistent layouts across differen
 ### Usage
 
 ```jsx
-<div className="container">
-  <div className="row">
-    <div className="col-12">Column 1</div>
-    <div className="col-12">Column 2</div>
-    <div className="col-12">Column 3</div>
-  </div>
-</div>
+<Container center={true}>
+  Welcome to PNFi
+</Container>
 ```
 
 This grid system provides a solid foundation for creating responsive and consistent layouts in your projects.
@@ -56,50 +52,55 @@ Octagon also provides fixed-width containers for scenarios where a consistent wi
 
 ### Usage
 
-To use a fixed-width container, add the appropriate class to your container element:
+The fixed container width is included in all the direct children of body: `<main>`, `<nav>` and `<footer>`. This is the grid spec:
 
-```jsx
-<div className="container-900">
-  <div className="row">
-    <div className="col-12">Column 1</div>
-    <div className="col-12">Column 2</div>
-    <div className="col-12">Column 3</div>
-  </div>
-</div>
-```
 
-For the 1024px container, use the `container-1024` class:
+| header | header  | header |
+| ------ | ------- | ------ |
+| .      | content | .      |
+| footer | footer  | footer |
 
-```jsx
-<div className="container-1024">
-  <div className="row">
-    <div className="col-12 col-md-6 col-lg-4">Column 1</div>
-    <div className="col-12 col-md-6 col-lg-4">Column 2</div>
-    <div className="col-12 col-md-6 col-lg-4">Column 3</div>
-  </div>
-</div>
+You can access and use it being a direct children of the body:
+
+```css
+
+body > .my_component {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
 ```
 
 These fixed-width containers help maintain a consistent layout, especially when dealing with complex or large horizontal elements.
 
 ## Fluid Container
 
-In addition to fixed-width containers, Octagon also supports fluid containers that span the entire width of the viewport. This is particularly useful for creating layouts that need to adapt to various screen sizes without fixed constraints.
+In addition to fixed-width containers, Octagon also supports fluid containers that span the entire width of the viewport. This is particularly useful for creating layouts that need to adapt to various screen sizes without fixed constraints. The fluid container width is included in all the children nodes of `<main>`.
 
-### Usage
+We included the body as a container, in order to use CSS `@container` queries. You can access it with `oct-body`:
 
-To use a fluid container, simply add the `container-fluid` class to your container element:
+```css
+.my_component {
+  width: 320px;
 
-```jsx
-<div className="container-fluid">
-  <div className="row">
-    <div className="col-12 col-md-6 col-lg-4">Column 1</div>
-    <div className="col-12 col-md-6 col-lg-4">Column 2</div>
-    <div className="col-12 col-md-6 col-lg-4">Column 3</div>
-  </div>
-</div>
+  @container oct-body (min-width: 768px) {
+    width: 480px;
+  }
+}
 ```
 
-This will ensure that your container spans the full width of the viewport, providing a more flexible and adaptive layout.
 
+### Aspect Ratios
 
+#### Portrait
+- **Aspect Ratio**: 3:4
+- **Usage**: Suitable for displaying images that are taller than they are wide.
+
+#### Landscape
+- **Aspect Ratio**: 16:9
+- **Usage**: Ideal for videos, full-screen components, and images that are wider than they are tall.
+
+#### Square
+- **Aspect Ratio**: 1:1
+- **Usage**: Best for images that need to be displayed with equal width and height. Ideal for embeds.

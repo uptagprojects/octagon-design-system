@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Logo Usage
 
-Our logo is a key element of our brand identity. To maintain consistency and ensure our logo is used correctly, please follow these guidelines.
+Our logo is a key element of the identity at the PNFi. To maintain consistency we recommend follow these guidelines:
 
 ## Correct Usage
 
@@ -17,16 +17,8 @@ Our logo is a key element of our brand identity. To maintain consistency and ens
 
 - **Do Not Distort**: Do not stretch, compress, or otherwise distort the logo.
 - **Do Not Change Colors**: Do not alter the logo colors.
-- **Do Not Add Effects**: Avoid adding shadows, gradients, or other effects to the logo.
+- **Do Not Add Effects**: Avoid adding shadows, changing the gradient, or other effects to the logo.
 - **Do Not Rotate**: The logo should always be oriented horizontally.
 
-## Examples
 
-### Correct Usage
-
-### Incorrect Usage
-
-
-By following these guidelines, you help ensure that our brand remains strong and consistent.
-
-For any questions regarding logo usage, please contact the design team.
+By following these guidelines, you help ensure that our octagon remains strong and consistent, but any suggestion or improvement is more than welcome :)
